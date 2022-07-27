@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-4">
+        <div class="card border-0 shadow">
+          <img src="{{ serie.foto }}" width="208px" height="189.11px" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">{{serie.nombre}}</h5>
+            <div class="card-text text-black-50">{{serie.genero}}</div>
+            <div class="card-text text-black-50">{{serie.plataforma}}</div>
+
+          </div>
+        </div>
+      </div> <!-- fin col-4 -->
+      <div class="col-8">
+  
+        <h2>Lista de Capítulos</h2>
+  
+        <div class="row">
+          <div class="col-4" *ngFor="let capitulo of serie.capitulos">
+           
+           
+            <app-capitulos [capitulo]="capitulo"></app-capitulos>
+  
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,37 @@
+<div class="col-8">
+    <h1><i class="fa-solid fa-address-book"></i> {{ titulo }}</h1>
+    
+    <table class="table ">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre de la serie</th>
+            <th scope="col">Género</th>
+            <th scope="col">Plataforma</th>
+            <th scope="col">Capítulos</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let nserie of serie"><!-- // inicia el for-->
+            <th scope="row">{{ nserie.id }}</th>
+            <td>{{ nserie.nombre | uppercase }}</td> <!--usando pipe uppercase-->
+            <td>{{ nserie.genero}}</td>
+            <td>{{ nserie.plataforma}}</td>
+            <td>{{ nserie.capitulos.length }}</td> <!-- length da el numero de elementos que tiene un array-->
+            <td>
+                <a routerLink="/series/{{nserie.id}}" class="btn btn-primary"><i class="fa-solid fa-circle-right"></i></a>
+            </td>
+          </tr><!--// fin de tr y ciclo for-->
+        </tbody>
+        <tfoot>
+            <tr>
+              <td><b> Total de series mostradas:</b></td>
+              <td colspan="5" class="text-danger"><i class="fa-solid fa-users"></i> {{ serie.length }}</td>
+            </tr>
+          </tfoot>
+      </table>
+    
+      
+      
+    </div>
