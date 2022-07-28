@@ -1,0 +1,16 @@
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
+.tablebg{
+    background-color: rgba(15, 15, 88, 0.959);
+    color: #ccc;
+    border: gray 5px;
+}
+
+.table tr [th] tr[td]{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+

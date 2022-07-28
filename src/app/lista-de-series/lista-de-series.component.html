@@ -1,8 +1,8 @@
 <div class="col-8">
-    <h1><i class="fa-solid fa-address-book"></i> {{ titulo }}</h1>
+    <h1><i class="fa-solid fa-house-signal"></i> {{ titulo }}</h1>
     
-    <table class="table ">
-        <thead class="table-dark">
+    <table class="table">
+        <thead class="tablebg">
           <tr>
             <th scope="col">#</th>
             <th scope="col">Nombre de la serie</th>
@@ -20,14 +20,14 @@
             <td>{{ nserie.plataforma}}</td>
             <td>{{ nserie.capitulos.length }}</td> <!-- length da el numero de elementos que tiene un array-->
             <td>
-                <a routerLink="/series/{{nserie.id}}" class="btn btn-primary"><i class="fa-solid fa-circle-right"></i></a>
+                <a routerLink="/series/{{nserie.id}}" class="btn btn-primary"><i class="fa-solid fa-circle-chevron-right"></i></a>
             </td>
           </tr><!--// fin de tr y ciclo for-->
         </tbody>
         <tfoot>
             <tr>
               <td><b> Total de series mostradas:</b></td>
-              <td colspan="5" class="text-danger"><i class="fa-solid fa-users"></i> {{ serie.length }}</td>
+              <td colspan="5" class="text-danger x2"><b><i class="fa-brands fa-chromecast"></i> {{ serie.length }}</b></td>
             </tr>
           </tfoot>
       </table>

@@ -11,6 +11,7 @@ import { SeriesService } from '../services/series.service';
 })
 export class SeriesComponent implements OnInit {
 
+  titulo="Lista de Capítulos";
   id = 0;
   serie!: Series;
 
