@@ -7,7 +7,6 @@ import { Series } from '../models/series.interface';
 export class SeriesService {
 
   private series:Series[]=[
-
     {
       id:1,
       nombre:'Stranger Things',
@@ -23,10 +22,8 @@ export class SeriesService {
         {id:6,nombre:'El monstruo',descripcion:'Jonathan busca a Nancy en la oscuridad y Steve hace lo mismo. Hopper y Joyce descubren la verdad sobre los experimentos del laboratorio.',duracion:'47m'},
         {id:7,nombre:'La bañera',descripcion:'Once intenta llegar hasta Will, y Lucas advierte sobre algo terrible que se avecina. Nancy y Jonathan le muestran a la policía',duracion:'42m'},
         {id:8,nombre:'El otro lado',descripcion:'El doctor Brenner detiene a Hopper y Joyce para un interrogatorio. Los chicos esperan con Once en el gimnasio',duracion:'55m'},
-
       ],
     },
-
     {
       id:2,
       nombre:'Stranger Things 2',
@@ -43,10 +40,8 @@ export class SeriesService {
         {id:7,nombre:'La hermana pérdida',descripcion:'Tras una serie de visiones, Once se embarca en una búsqueda que termina lejos de Hawkins, donde conoce a un clan liderado por una chica',duracion:'48m'},
         {id:8,nombre:'El azotamentes',descripcion:'La situación en el Laboratorio Hawkins activa un protocolo de seguridad donde nadie puede salir del lugar',duracion:'48m'},
         {id:9,nombre:'El portal',descripcion:'Once sabe que la solución está en sus manos y debe terminar lo que inició, mientras los demás se arriesgan con un plan para sofocar a la sombra que posee a Will.',duracion:'1h 2m'},
-
       ],
     }
-
   ]
 
   constructor() { }

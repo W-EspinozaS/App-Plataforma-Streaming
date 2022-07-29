@@ -15,12 +15,11 @@ export class SeriesComponent implements OnInit {
   id = 0;
   serie!: Series;
 
-  //http://localhost:4000/series/1
+  //http://localhost:4200/series/1
 
   paramsSubscription: Subscription = new Subscription;
   
   constructor(private route: ActivatedRoute,private servicio:SeriesService) { }
-  
   
   ngOnInit(): void {
 
@@ -28,13 +27,10 @@ export class SeriesComponent implements OnInit {
       this.id = +params['id']; // (+) converts string 'id' to a number
     });
 
-
     this.serie=this.servicio.ObtenerUno(this.id);
-
   }
 
   ngOnDestroy() {
     this.paramsSubscription.unsubscribe();
   }
-
 }
